@@ -2,7 +2,6 @@ import { Client } from "discord.ts-selfbot";
 import notifier from "node-notifier";
 import editjsonfile from "edit-json-file";
 import inquirer from "inquirer";
-import { panic } from "./util/panic";
 
 // Main function
 async function main() {
