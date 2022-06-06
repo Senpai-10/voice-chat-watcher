@@ -41,12 +41,6 @@ async function main() {
         config.set("channels_list", channels_list);
     }
 
-    if (channels_list.length == 0) {
-        panic(
-            `'channels_list' can't be empty\nplease add ids to 'channels_list' (in config.json)`
-        );
-    }
-
     const client = new Client();
     client.login(discord_token);
 
