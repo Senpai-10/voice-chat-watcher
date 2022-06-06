@@ -1,8 +1,16 @@
-config file
+Notify user when someone joins an empty voice chat from list of voice channels IDs
 
-```json
-{
-    "discord_token": "", // Here you put your discord token.
-    "channels_list": [] // Voice channels that are going to be watched.
-}
-```
+<br>
+
+requirements:
+
+-   nodejs
+-   nodejs package manager (npm, yarn, ...etc)
+
+<br>
+
+## install
+
+-   Clone the repo
+-   edit config.json
+-   run `yarn && yarn start` or `npm install && npm start`
