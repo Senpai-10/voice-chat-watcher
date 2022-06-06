@@ -4,7 +4,6 @@ import { panic } from "./util/panic";
 
 // Main function
 function main() {
-    // panic if
     if (config.channels_list.length == 0) {
         panic(
             `'channels_list' can't be empty\nplease add ids to 'channels_list' (in config.json)`
