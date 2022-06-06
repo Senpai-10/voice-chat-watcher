@@ -12,15 +12,18 @@ function main() {
     }
 
     const client = new Client();
+    client.login(config.discord_token);
 
-    client.on("ready", () => {
+    client.once("ready", () => {
         console.log(`Watching ${config.channels_list.length} channels.`);
     });
 
-    client.login(config.discord_token);
-}
+    client.on("voiceStateUpdate", (oldChannel, newChannel) => {
+        if (config.channels_list.includes(newChannel.channelID) == false)
+            return;
 
-// Check if id is not valid or a text chat channel
-function is_valid_id() {}
+        console.log(`${oldChannel.channelID} - ${newChannel.channelID}`);
+    });
+}
 
 main();
