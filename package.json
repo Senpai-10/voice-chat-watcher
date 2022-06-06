@@ -9,6 +9,7 @@
         "start": "ts-node src/index.ts"
     },
     "devDependencies": {
+        "@types/edit-json-file": "^1.7.0",
         "@types/inquirer": "^8.2.1",
         "@types/node": "^17.0.40",
         "ts-node-dev": "^2.0.0",
@@ -16,6 +17,7 @@
     },
     "dependencies": {
         "discord.ts-selfbot": "^1.0.4-dev",
+        "edit-json-file": "^1.7.0",
         "inquirer": "^8.2.4"
     }
 }
