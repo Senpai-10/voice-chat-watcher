@@ -1,6 +1,11 @@
 import editjsonfile from "edit-json-file";
 
-const config = editjsonfile("./config.json", { autosave: true });
+let config_path: string =
+    Number(process.env.dev) == 1 || Boolean(process.env.dev) == true
+        ? "./.config.dev.json"
+        : "./config.json";
+
+const config = editjsonfile(config_path, { autosave: true });
 
 export default {
     discord_token: config.get("discord_token") as string,
