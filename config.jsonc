@@ -1,0 +1,7 @@
+{
+    // Here you put your discord token.
+    "discord_token": "",
+
+    // Voice channels that going to be watched.
+    "channels": []
+}
